@@ -157,14 +157,41 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SIb-pr-pH5">
+                                        <rect key="frame" x="80.5" y="505.5" width="158" height="38.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQS-Hd-3jd">
+                                                <rect key="frame" x="0.0" y="0.0" width="158" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KI-mC-ih5">
+                                        <rect key="frame" x="97.5" y="443" width="125" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="NSx-kb-56j"/>
+                                            <constraint firstAttribute="width" constant="125" id="voP-SJ-0C2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Convert"/>
+                                        <connections>
+                                            <action selector="converButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7SN-21-wGB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="1KI-mC-ih5" firstAttribute="centerX" secondItem="SIb-pr-pH5" secondAttribute="centerX" id="420-Yd-r6S"/>
                                     <constraint firstItem="t3l-w9-k1c" firstAttribute="top" secondItem="9X3-rH-Vr0" secondAttribute="bottom" constant="8" id="C77-X6-boq"/>
                                     <constraint firstItem="9X3-rH-Vr0" firstAttribute="leading" secondItem="HaO-PK-h4H" secondAttribute="leading" constant="8" id="G1B-ij-60m"/>
                                     <constraint firstItem="t3l-w9-k1c" firstAttribute="top" secondItem="HaO-PK-h4H" secondAttribute="top" constant="60" id="NuO-aF-VKY"/>
+                                    <constraint firstItem="1KI-mC-ih5" firstAttribute="centerX" secondItem="HaO-PK-h4H" secondAttribute="centerX" id="R14-UX-jhh"/>
                                     <constraint firstItem="9X3-rH-Vr0" firstAttribute="top" secondItem="HaO-PK-h4H" secondAttribute="top" constant="20" id="TrD-Vg-tS0"/>
                                     <constraint firstItem="t3l-w9-k1c" firstAttribute="leading" secondItem="HaO-PK-h4H" secondAttribute="leadingMargin" id="ZRZ-IJ-eKL"/>
+                                    <constraint firstAttribute="bottom" secondItem="SIb-pr-pH5" secondAttribute="bottom" constant="24" id="ft4-sY-gr2"/>
+                                    <constraint firstItem="SIb-pr-pH5" firstAttribute="top" secondItem="1KI-mC-ih5" secondAttribute="bottom" constant="8" id="ndZ-HV-0a9"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="t3l-w9-k1c" secondAttribute="trailing" id="rba-S9-hAl"/>
                                 </constraints>
                             </view>
@@ -182,6 +209,7 @@
                         <outlet property="coifficAgeLabel" destination="1mZ-6L-8HF" id="kjc-Tk-WMz"/>
                         <outlet property="coifficEngineLabel" destination="ZhW-V6-isn" id="Yo1-g0-0Na"/>
                         <outlet property="engineLabel" destination="FYW-fS-oSj" id="HP8-FE-to0"/>
+                        <outlet property="priceLabel" destination="IQS-Hd-3jd" id="sZk-Tu-dw5"/>
                         <outlet property="sliderAgeOutlet" destination="02Y-ID-Je5" id="rdo-cA-yJG"/>
                         <outlet property="sliderEngineOutlet" destination="QjF-ED-SEc" id="TBK-sP-0fJ"/>
                         <outlet property="yearsSwitcherLabel" destination="HfQ-x4-aeD" id="O8h-Sw-Lk6"/>
@@ -190,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
+            <point key="canvasLocation" x="133.59999999999999" y="138.0809595202399"/>
         </scene>
     </scenes>
 </document>

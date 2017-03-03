@@ -9,15 +9,18 @@
 import Foundation
 
 struct OsagoModel {
-    var age: Int
-    var stage: Bool
+    var age: Int = 0
+    var stage: Bool = true
     
-    var dvigatel: Int
+    var dvigatel: Int = 0
+   
     
-    func price() -> Double {
-        var result = 5.0 * coefficientAge() * coefficientDvegatel()
+    
+    
+    func price() -> Int {
+        let result = 5000 * coefficientAge() * coefficientDvegatel()
         
-        return result
+        return Int(result)
     }
     
     func coefficientAge() -> Double {

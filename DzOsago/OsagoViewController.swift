@@ -10,7 +10,7 @@ import UIKit
 
 class OsagoViewController: UIViewController {
     
-    var osagoModel: OsagoModel!
+    var osagoModel: OsagoModel = OsagoModel()
     
     @IBOutlet var sliderAgeOutlet: UISlider!
     
@@ -30,6 +30,7 @@ class OsagoViewController: UIViewController {
     @IBOutlet var yearsSwitcherLabel: UILabel!
     
     
+    @IBOutlet var priceLabel: UILabel!
     
     
     
@@ -65,20 +66,30 @@ class OsagoViewController: UIViewController {
         sliderEngineOutlet.minimumValue = 49.0
         sliderEngineOutlet.maximumValue = 300.0
         let resultEngine = Int(sliderEngineOutlet.value)
+        osagoModel.dvigatel = resultEngine
+        let coifengine = osagoModel.coefficientDvegatel()
         
         
+        coifficEngineLabel.text = String(coifengine)
         engineLabel.text = String("Engine: \(resultEngine)")
         
     }
     
     @IBAction func switcherSwitcPressed(_ sender: UISwitch) {
         if yearsSwitcherOutlet.isOn {
+            osagoModel.stage = true
             yearsSwitcherLabel.text = "more than 3 years"
         } else {
             yearsSwitcherLabel.text = "less than 3 years"
+            osagoModel.stage = false
         }
     }
     
+    
+    @IBAction func converButtonPressed(_ sender: UIButton) {
+        
+        priceLabel.text = "Price: \(osagoModel.price()) "
+    }
     
     
     
