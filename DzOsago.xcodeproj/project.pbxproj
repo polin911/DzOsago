@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		362444AC1E6958730021D8B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362444AB1E6958730021D8B9 /* AppDelegate.swift */; };
-		362444AE1E6958730021D8B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362444AD1E6958730021D8B9 /* ViewController.swift */; };
 		362444B11E6958730021D8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362444AF1E6958730021D8B9 /* Main.storyboard */; };
 		362444B31E6958730021D8B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362444B21E6958730021D8B9 /* Assets.xcassets */; };
 		362444B61E6958730021D8B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 362444B41E6958730021D8B9 /* LaunchScreen.storyboard */; };
+		362444BE1E6959470021D8B9 /* OsagoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362444BD1E6959470021D8B9 /* OsagoModel.swift */; };
+		362444C01E6977130021D8B9 /* OsagoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362444BF1E6977130021D8B9 /* OsagoView.swift */; };
+		362444C21E6977250021D8B9 /* OsagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362444C11E6977250021D8B9 /* OsagoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		362444A81E6958730021D8B9 /* DzOsago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DzOsago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362444AB1E6958730021D8B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		362444AD1E6958730021D8B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		362444B01E6958730021D8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		362444B21E6958730021D8B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362444B51E6958730021D8B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		362444B71E6958730021D8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		362444BD1E6959470021D8B9 /* OsagoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsagoModel.swift; sourceTree = "<group>"; };
+		362444BF1E6977130021D8B9 /* OsagoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsagoView.swift; sourceTree = "<group>"; };
+		362444C11E6977250021D8B9 /* OsagoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OsagoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				362444AB1E6958730021D8B9 /* AppDelegate.swift */,
-				362444AD1E6958730021D8B9 /* ViewController.swift */,
 				362444AF1E6958730021D8B9 /* Main.storyboard */,
 				362444B21E6958730021D8B9 /* Assets.xcassets */,
 				362444B41E6958730021D8B9 /* LaunchScreen.storyboard */,
 				362444B71E6958730021D8B9 /* Info.plist */,
+				362444BD1E6959470021D8B9 /* OsagoModel.swift */,
+				362444BF1E6977130021D8B9 /* OsagoView.swift */,
+				362444C11E6977250021D8B9 /* OsagoViewController.swift */,
 			);
 			path = DzOsago;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				362444AE1E6958730021D8B9 /* ViewController.swift in Sources */,
+				362444C21E6977250021D8B9 /* OsagoViewController.swift in Sources */,
+				362444BE1E6959470021D8B9 /* OsagoModel.swift in Sources */,
+				362444C01E6977130021D8B9 /* OsagoView.swift in Sources */,
 				362444AC1E6958730021D8B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
